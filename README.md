@@ -1,10 +1,9 @@
-sinatra-skeleton-app
+faye-server
 ====================
 My Ruby sandbox.
 
 ```
-sudo gem install thin
-git clone git@github.com:zhuravel/sinatra-skeleton-app.git
-cd sinatra-skeleton-app
-thin start
+git clone git@github.com:sbrmnn/faye-server.git
+cd faye-server
+bundle exec thin start
 ```
