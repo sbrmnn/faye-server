@@ -6,5 +6,5 @@ My Ruby sandbox.
 git clone git@github.com:sbrmnn/faye-server.git
 cd faye-server
 bundle install
-bundle exec thin start
+bundle exec thin start -p 9292
 ```
