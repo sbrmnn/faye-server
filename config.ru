@@ -3,6 +3,10 @@
 
 require 'faye'
 require 'config_env'
+require "rubygems"
+require "bundler"
+
+Bundler.require :default, (ENV["RACK_ENV"] || "development").to_sym
 Faye::WebSocket.load_adapter('thin')
 ConfigEnv.path_to_config("#{File.dirname(__FILE__)}/config/config_env.rb")
 
